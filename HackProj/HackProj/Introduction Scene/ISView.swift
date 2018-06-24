@@ -7,30 +7,32 @@
 //
 
 import UIKit
+import SnapKit
 
 public class ISView: UIView {
 
     public var label: UILabel! {
-        let label = UILabel(frame: self.frame)
-        label.text = """
+        didSet {
+            label.backgroundColor = UIColor.orange
+            label.text = """
             This application is location based. Please allow the app to receive
             location updates so we can automatically track whenever you're within
             you location of interest.
-        """
+            """
 
-        return label
+            label.snp.makeConstraints { (maker) in
+                maker.center.equalTo(self.snp.center)
+                maker.height.equalTo(frame.height * 0.25)
+                maker.width.equalTo(frame.width * 0.75)
+            }
+            addSubview(label)
+        }
     }
 
     override public func layoutSubviews() {
         super.layoutSubviews()
-
-    }
-
-    private func layoutLabel() {
-        label
-
-
-        self.addSubview(label)
+        self.label = UILabel(frame: self.frame)
+        backgroundColor = UIColor.white
     }
 
 }

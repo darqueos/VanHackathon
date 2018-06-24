@@ -54,6 +54,7 @@
 		15D03BC520DFE92000E7F4B7 /* DSAverageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D03BC320DFE92000E7F4B7 /* DSAverageTableViewCell.swift */; };
 		15D03BC920DFEE7F00E7F4B7 /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D03BC820DFEE7F00E7F4B7 /* SSViewController.swift */; };
 		15D03BCA20DFEE7F00E7F4B7 /* SSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D03BC820DFEE7F00E7F4B7 /* SSViewController.swift */; };
+		15E0EF4020E01E770014D986 /* Pods_HackProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AF749D8525A6C55FCF3B91 /* Pods_HackProj.framework */; };
 		15F8A09520DFD7DE007A8FAB /* HackProjAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8A09420DFD7DE007A8FAB /* HackProjAppDelegate.swift */; };
 		15F8A09720DFD7DE007A8FAB /* DSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8A09620DFD7DE007A8FAB /* DSViewController.swift */; };
 		15F8A09A20DFD7DE007A8FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8A09820DFD7DE007A8FAB /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		15F8A0AA20DFD7E0007A8FAB /* HackProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8A0A920DFD7E0007A8FAB /* HackProjTests.swift */; };
 		15F8A0B520DFD7E0007A8FAB /* HackProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8A0B420DFD7E0007A8FAB /* HackProjUITests.swift */; };
 		3B9CECC9CC49D32FC5855C52 /* Pods_HackProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AF749D8525A6C55FCF3B91 /* Pods_HackProj.framework */; };
+		3FCDF7AFFDB1F6F7D1783218 /* Pods_HackProjUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650CDC44980B539A59C1DA59 /* Pods_HackProjUI.framework */; };
 		804FD4FA5512A419EA8A06A5 /* Pods_HackProjTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D0E960B9EE3870184EE8FF /* Pods_HackProjTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +128,9 @@
 		15F8A0B620DFD7E0007A8FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28AF749D8525A6C55FCF3B91 /* Pods_HackProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B38A5902E4432AC1A55DE1F /* Pods-HackProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProjTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProjTests/Pods-HackProjTests.debug.xcconfig"; sourceTree = "<group>"; };
+		650CDC44980B539A59C1DA59 /* Pods_HackProjUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackProjUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF924E7E6A56D6F1A5E1A09 /* Pods-HackProjUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProjUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProjUI/Pods-HackProjUI.debug.xcconfig"; sourceTree = "<group>"; };
+		D7C24135AADEFEAE325D7FAD /* Pods-HackProjUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProjUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackProjUI/Pods-HackProjUI.release.xcconfig"; sourceTree = "<group>"; };
 		F3D0E960B9EE3870184EE8FF /* Pods_HackProjTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackProjTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44A12351A707618EADF25E7 /* Pods-HackProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackProj/Pods-HackProj.debug.xcconfig"; sourceTree = "<group>"; };
 		F9A91258915C47DD8E3C4F1B /* Pods-HackProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackProjTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackProjTests/Pods-HackProjTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E0EF4020E01E770014D986 /* Pods_HackProj.framework in Frameworks */,
+				3FCDF7AFFDB1F6F7D1783218 /* Pods_HackProjUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,14 +209,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		156E644320E00B4C0026988F /* Introducation Scene */ = {
+		156E644320E00B4C0026988F /* Introduction Scene */ = {
 			isa = PBXGroup;
 			children = (
 				156E645020E00C520026988F /* ISPresentationModel.swift */,
 				156E644420E00B6B0026988F /* ISViewController.swift */,
 				156E645620E012850026988F /* ISView.swift */,
 			);
-			path = "Introducation Scene";
+			path = "Introduction Scene";
 			sourceTree = "<group>";
 		};
 		15D03BBB20DFE5D500E7F4B7 /* Data Scene */ = {
@@ -261,17 +268,17 @@
 		15F8A09320DFD7DE007A8FAB /* HackProj */ = {
 			isa = PBXGroup;
 			children = (
-				156E644320E00B4C0026988F /* Introducation Scene */,
+				156E644320E00B4C0026988F /* Introduction Scene */,
 				156E643720DFF96D0026988F /* Entities */,
 				15D03BC720DFEE6500E7F4B7 /* Settings Scene */,
 				15D03BBB20DFE5D500E7F4B7 /* Data Scene */,
 				15F8A09420DFD7DE007A8FAB /* HackProjAppDelegate.swift */,
 				156E644A20E00BDB0026988F /* UIViewController+Extension.swift */,
+				15D03BBE20DFE6F300E7F4B7 /* UIPresentationModel.swift */,
 				15F8A09820DFD7DE007A8FAB /* Main.storyboard */,
 				15F8A09B20DFD7E0007A8FAB /* Assets.xcassets */,
 				15F8A09D20DFD7E0007A8FAB /* LaunchScreen.storyboard */,
 				15F8A0A020DFD7E0007A8FAB /* Info.plist */,
-				15D03BBE20DFE6F300E7F4B7 /* UIPresentationModel.swift */,
 			);
 			path = HackProj;
 			sourceTree = "<group>";
@@ -301,6 +308,8 @@
 				0D5C7BA9374884E2F0F1CA10 /* Pods-HackProj.release.xcconfig */,
 				3B38A5902E4432AC1A55DE1F /* Pods-HackProjTests.debug.xcconfig */,
 				F9A91258915C47DD8E3C4F1B /* Pods-HackProjTests.release.xcconfig */,
+				9EF924E7E6A56D6F1A5E1A09 /* Pods-HackProjUI.debug.xcconfig */,
+				D7C24135AADEFEAE325D7FAD /* Pods-HackProjUI.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 				156E644120E0054A0026988F /* MapKit.framework */,
 				28AF749D8525A6C55FCF3B91 /* Pods_HackProj.framework */,
 				F3D0E960B9EE3870184EE8FF /* Pods_HackProjTests.framework */,
+				650CDC44980B539A59C1DA59 /* Pods_HackProjUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,6 +343,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 156E642B20DFF2D90026988F /* Build configuration list for PBXNativeTarget "HackProjUI" */;
 			buildPhases = (
+				737ECC02BDBA7B93AD120CC4 /* [CP] Check Pods Manifest.lock */,
 				156E641120DFF2D90026988F /* Sources */,
 				156E641220DFF2D90026988F /* Frameworks */,
 				156E641320DFF2D90026988F /* Headers */,
@@ -555,6 +566,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackProj/Pods-HackProj-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		737ECC02BDBA7B93AD120CC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackProjUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		961115AF04C09CCE376F0550 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,6 +770,7 @@
 /* Begin XCBuildConfiguration section */
 		156E642720DFF2D90026988F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF924E7E6A56D6F1A5E1A09 /* Pods-HackProjUI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -769,6 +799,7 @@
 		};
 		156E642820DFF2D90026988F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C24135AADEFEAE325D7FAD /* Pods-HackProjUI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

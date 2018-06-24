@@ -14,12 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let dsPresentationModel = DSPresentationModel()
-        let dsViewController = DSViewController(presentationModel: dsPresentationModel)
-        let navigationController = UINavigationController(rootViewController: dsViewController)
-
         let frame = UIScreen.main.bounds
-        dsViewController.resize(bounds: frame)
+        let viewController = ISViewController(frame: frame, presentationModel: ISPresentationModel())
+        let navigationController = UINavigationController(rootViewController: viewController)
 
         window = UIWindow(frame: frame)
         window?.rootViewController = navigationController
