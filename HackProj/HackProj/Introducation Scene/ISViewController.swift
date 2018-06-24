@@ -15,10 +15,15 @@ public class ISViewController: UIViewController {
     /// Controls data and manages presentation format.
     private var presentationModel: ISPresentationModel?
 
+    /// Custom View
+    private var isView: ISView?
+
     // MARK: Class Initialization & Lifecycle
     
-    convenience public init(presentationModel: ISPresentationModel) {
+    convenience public init(frame: CGRect, presentationModel: ISPresentationModel) {
         self.init()
+        self.isView = ISView(frame: frame)
+        self.view = isView
         self.presentationModel = presentationModel
     }
 
@@ -28,6 +33,10 @@ public class ISViewController: UIViewController {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+
+    override public func viewWillLayoutSubviews() {
+        self.view.backgroundColor = UIColor.blue
     }
 
 }

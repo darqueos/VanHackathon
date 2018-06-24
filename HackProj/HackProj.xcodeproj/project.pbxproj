@@ -41,6 +41,11 @@
 		156E645320E00F700026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
 		156E645420E00F710026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
 		156E645520E00F7F0026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
+		156E645720E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
+		156E645820E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
+		156E645920E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
+		156E645A20E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
+		156E645B20E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
 		15D03BBD20DFE66200E7F4B7 /* DSPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D03BBC20DFE66200E7F4B7 /* DSPresentationModel.swift */; };
 		15D03BBF20DFE6F300E7F4B7 /* UIPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D03BBE20DFE6F300E7F4B7 /* UIPresentationModel.swift */; };
 		15D03BC120DFE8DF00E7F4B7 /* DSGraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D03BC020DFE8DF00E7F4B7 /* DSGraphTableViewCell.swift */; };
@@ -100,6 +105,7 @@
 		156E644420E00B6B0026988F /* ISViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISViewController.swift; sourceTree = "<group>"; };
 		156E644A20E00BDB0026988F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		156E645020E00C520026988F /* ISPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPresentationModel.swift; sourceTree = "<group>"; };
+		156E645620E012850026988F /* ISView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISView.swift; sourceTree = "<group>"; };
 		15D03BBC20DFE66200E7F4B7 /* DSPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSPresentationModel.swift; sourceTree = "<group>"; };
 		15D03BBE20DFE6F300E7F4B7 /* UIPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresentationModel.swift; sourceTree = "<group>"; };
 		15D03BC020DFE8DF00E7F4B7 /* DSGraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGraphTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,8 +205,9 @@
 		156E644320E00B4C0026988F /* Introducation Scene */ = {
 			isa = PBXGroup;
 			children = (
-				156E644420E00B6B0026988F /* ISViewController.swift */,
 				156E645020E00C520026988F /* ISPresentationModel.swift */,
+				156E644420E00B6B0026988F /* ISViewController.swift */,
+				156E645620E012850026988F /* ISView.swift */,
 			);
 			path = "Introducation Scene";
 			sourceTree = "<group>";
@@ -530,6 +537,7 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -540,6 +548,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -617,6 +626,7 @@
 				156E645320E00F700026988F /* ISPresentationModel.swift in Sources */,
 				156E644E20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
 				156E642D20DFF2FC0026988F /* SSViewController.swift in Sources */,
+				156E645A20E012850026988F /* ISView.swift in Sources */,
 				156E644820E00B6B0026988F /* ISViewController.swift in Sources */,
 				156E643620DFF9250026988F /* SSPresentationModel.swift in Sources */,
 				156E642E20DFF2FE0026988F /* DSViewController.swift in Sources */,
@@ -628,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156E645B20E012850026988F /* ISView.swift in Sources */,
 				156E644F20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
 				156E645420E00F710026988F /* ISPresentationModel.swift in Sources */,
 				156E644920E00B6B0026988F /* ISViewController.swift in Sources */,
@@ -644,6 +655,7 @@
 				156E643C20DFFBC20026988F /* Location.swift in Sources */,
 				156E643F20E005000026988F /* LocationManager.swift in Sources */,
 				15D03BC420DFE92000E7F4B7 /* DSAverageTableViewCell.swift in Sources */,
+				156E645720E012850026988F /* ISView.swift in Sources */,
 				15D03BC120DFE8DF00E7F4B7 /* DSGraphTableViewCell.swift in Sources */,
 				15D03BC920DFEE7F00E7F4B7 /* SSViewController.swift in Sources */,
 				156E645120E00C520026988F /* ISPresentationModel.swift in Sources */,
@@ -662,6 +674,7 @@
 			files = (
 				156E644C20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
 				156E643A20DFFA580026988F /* Time.swift in Sources */,
+				156E645820E012850026988F /* ISView.swift in Sources */,
 				156E643520DFF9250026988F /* SSPresentationModel.swift in Sources */,
 				15F8A0AA20DFD7E0007A8FAB /* HackProjTests.swift in Sources */,
 				156E645220E00C520026988F /* ISPresentationModel.swift in Sources */,
@@ -678,6 +691,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156E645920E012850026988F /* ISView.swift in Sources */,
 				156E644D20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
 				156E645520E00F7F0026988F /* ISPresentationModel.swift in Sources */,
 				156E644720E00B6B0026988F /* ISViewController.swift in Sources */,
