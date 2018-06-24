@@ -12,7 +12,7 @@ class ISPresentationModel: UIPresentationModel {
 
     func requestAccessToLocationServices() {
         let locationManager = LocationManager.sharedInstance.enableLocationServices { (accessGranted) in
-            if accessGranted, if let delegate = self.delegate {
+            if accessGranted, let delegate = self.delegate {
                 delegate.layoutLabel(text:
                     """
                     Please fix your location services settings as this app main focus is

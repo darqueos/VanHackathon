@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-protocol ISViewControllerDelegate {
+protocol ISViewControllerDelegate: NSObjectProtocol {
     func layoutLabel(text: String)
 }
 
@@ -21,6 +23,11 @@ class ISViewController: UIViewController, ISViewControllerDelegate {
 
     /// Custom View
     private var isView: ISView?
+
+    private let disposeBag = DisposeBag()
+
+    /// Example using RxSwift to map new label text value.
+    var labelText = Variable<String>("")
 
     // MARK: Class Initialization & Lifecycle
     
@@ -47,10 +54,15 @@ class ISViewController: UIViewController, ISViewControllerDelegate {
     override public func viewDidLoad() {
         super.viewDidLoad()
         presentationModel?.requestAccessToLocationServices()
+
+        if let isView = self.isView {
+            labelText.asObservable().bind(to: isView.label.rx.text).disposed(by: disposeBag)
+        }
     }
 
     func layoutLabel(text: String) {
         self.isView?.label.text = text
+        self.labelText = Variable(text)
     }
 
 }

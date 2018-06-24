@@ -20,7 +20,7 @@ class LocationManager: NSObject {
 
     // MARK: Class Properties
 
-    typealias RequestLocationBlock = (accessGranted: Bool) -> Void
+    typealias RequestLocationBlock = (_ accessGranted: Bool) -> Void
 
     /// Apple's CoreLocation manager.
     private let locationManager = CLLocationManager()
