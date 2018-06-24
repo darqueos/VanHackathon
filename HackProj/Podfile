@@ -5,6 +5,8 @@ use_frameworks!
 
 target 'HackProj' do
     pod 'Alamofire', '~> 4.7'
+    pod 'Charts'
+    pod 'ChartsRealm'
     pod 'RealmSwift'
     pod 'RxCocoa',    '~> 4.0'
     pod 'RxSwift',    '~> 4.0'
