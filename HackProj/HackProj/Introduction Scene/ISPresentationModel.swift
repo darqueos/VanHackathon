@@ -1,4 +1,4 @@
-//
+//
 //  ISPresentationModel.swift
 //  HackProj
 //
@@ -6,15 +6,21 @@
 //  Copyright © 2018 Eduardo Quadros. All rights reserved.
 //
 
-import UIKit
+class ISPresentationModel: UIPresentationModel {
 
-public class ISPresentationModel: UIPresentationModel {
+    weak var delegate: ISViewControllerDelegate?
 
-    var placeholder: String?
-
-    public override init() {
-        super.init()
-        placeholder = "Test"
+    func requestAccessToLocationServices() {
+        let locationManager = LocationManager.sharedInstance.enableLocationServices { (accessGranted) in
+            if accessGranted, if let delegate = self.delegate {
+                delegate.layoutLabel(text:
+                    """
+                    Please fix your location services settings as this app main focus is
+                    tracking you in order to automatically clock you in.
+                    """
+                )
+            }
+        }
     }
 
 }

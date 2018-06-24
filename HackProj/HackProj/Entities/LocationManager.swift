@@ -20,6 +20,8 @@ class LocationManager: NSObject {
 
     // MARK: Class Properties
 
+    typealias RequestLocationBlock = (accessGranted: Bool) -> Void
+
     /// Apple's CoreLocation manager.
     private let locationManager = CLLocationManager()
 
@@ -33,20 +35,19 @@ class LocationManager: NSObject {
         locationManager.distanceFilter = distanceFilterInMeters
     }
 
-    func enableLocationServices() {
+    func enableLocationServices(_ onSelection: RequestLocationBlock) {
         switch CLLocationManager.authorizationStatus() {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
+            onSelection(false)
             break
         case .restricted, .denied:
-//            disableMyLocationBasedFeatures()
             break
         case .authorizedWhenInUse:
-//            enableMyWhenInUseFeatures()
             break
         case .authorizedAlways:
             locationManager.allowsBackgroundLocationUpdates = true
-//            enableMyAlwaysFeatures()
+            onSelection(true)
             break
         }
     }
@@ -55,22 +56,17 @@ class LocationManager: NSObject {
 
 extension LocationManager: CLLocationManagerDelegate {
 
-    func locationManager(_ manager: CLLocationManager,
-                         didChangeAuthorization status: CLAuthorizationStatus) {   switch status {
-    case .restricted, .denied:
-//        disableMyLocationBasedFeatures()
-        break
-
-    case .authorizedWhenInUse:
-//        enableMyWhenInUseFeatures()
-        break
-
-    case .authorizedAlways:
-        locationManager.allowsBackgroundLocationUpdates = true
-        break
-
-    case .notDetermined:
-        break
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .restricted, .denied:
+            break
+        case .authorizedWhenInUse:
+            break
+        case .authorizedAlways:
+            locationManager.allowsBackgroundLocationUpdates = true
+            break
+        case .notDetermined:
+            break
         }
     }
 

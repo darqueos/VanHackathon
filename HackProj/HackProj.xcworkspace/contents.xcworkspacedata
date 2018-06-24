@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/darqueos/Code/com.Vanhack/VanHackathon/HackProj/SettingsScene.playground">
+      location = "group:MyPlayground.playground">
    </FileRef>
    <FileRef
       location = "group:HackProj.xcodeproj">

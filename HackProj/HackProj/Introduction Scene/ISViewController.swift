@@ -8,7 +8,11 @@
 
 import UIKit
 
-public class ISViewController: UIViewController {
+protocol ISViewControllerDelegate {
+    func layoutLabel(text: String)
+}
+
+class ISViewController: UIViewController, ISViewControllerDelegate {
 
     // MARK: Class Properties
 
@@ -25,6 +29,7 @@ public class ISViewController: UIViewController {
         self.isView = ISView(frame: frame)
         self.view = isView
         self.presentationModel = presentationModel
+        self.presentationModel?.delegate = self
     }
 
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -37,6 +42,15 @@ public class ISViewController: UIViewController {
 
     override public func viewWillLayoutSubviews() {
         self.view.backgroundColor = UIColor.blue
+    }
+
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        presentationModel?.requestAccessToLocationServices()
+    }
+
+    func layoutLabel(text: String) {
+        self.isView?.label.text = text
     }
 
 }

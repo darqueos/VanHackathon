@@ -1,11 +1,5 @@
-//: A UIKit based Playground for presenting user interface
-  
 import UIKit
 import PlaygroundSupport
-import HackProjUI
-import Charts
-
-let viewController = SSViewController(style: .plain)
 
 class MyViewController : UIViewController {
     override func loadView() {
@@ -22,5 +16,4 @@ class MyViewController : UIViewController {
     }
 }
 // Present the view controller in the Live View window
-PlaygroundPage.current.needsIndefiniteExecution = true
-PlaygroundPage.current.liveView = viewController
+PlaygroundPage.current.liveView = MyViewController()

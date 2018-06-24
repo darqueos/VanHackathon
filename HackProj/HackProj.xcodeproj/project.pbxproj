@@ -28,9 +28,6 @@
 		156E644220E0054A0026988F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E644120E0054A0026988F /* MapKit.framework */; };
 		156E644520E00B6B0026988F /* ISViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644420E00B6B0026988F /* ISViewController.swift */; };
 		156E644620E00B6B0026988F /* ISViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644420E00B6B0026988F /* ISViewController.swift */; };
-		156E644720E00B6B0026988F /* ISViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644420E00B6B0026988F /* ISViewController.swift */; };
-		156E644820E00B6B0026988F /* ISViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644420E00B6B0026988F /* ISViewController.swift */; };
-		156E644920E00B6B0026988F /* ISViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644420E00B6B0026988F /* ISViewController.swift */; };
 		156E644B20E00BDB0026988F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644A20E00BDB0026988F /* UIViewController+Extension.swift */; };
 		156E644C20E00BDB0026988F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644A20E00BDB0026988F /* UIViewController+Extension.swift */; };
 		156E644D20E00BDB0026988F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644A20E00BDB0026988F /* UIViewController+Extension.swift */; };
@@ -38,9 +35,6 @@
 		156E644F20E00BDB0026988F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E644A20E00BDB0026988F /* UIViewController+Extension.swift */; };
 		156E645120E00C520026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
 		156E645220E00C520026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
-		156E645320E00F700026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
-		156E645420E00F710026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
-		156E645520E00F7F0026988F /* ISPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645020E00C520026988F /* ISPresentationModel.swift */; };
 		156E645720E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
 		156E645820E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
 		156E645920E012850026988F /* ISView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156E645620E012850026988F /* ISView.swift */; };
@@ -106,7 +100,7 @@
 		156E644120E0054A0026988F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		156E644420E00B6B0026988F /* ISViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISViewController.swift; sourceTree = "<group>"; };
 		156E644A20E00BDB0026988F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		156E645020E00C520026988F /* ISPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPresentationModel.swift; sourceTree = "<group>"; };
+		156E645020E00C520026988F /* ISPresentationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ISPresentationModel.swift; sourceTree = "<group>"; tabWidth = 4; };
 		156E645620E012850026988F /* ISView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISView.swift; sourceTree = "<group>"; };
 		15D03BBC20DFE66200E7F4B7 /* DSPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSPresentationModel.swift; sourceTree = "<group>"; };
 		15D03BBE20DFE6F300E7F4B7 /* UIPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPresentationModel.swift; sourceTree = "<group>"; };
@@ -652,11 +646,9 @@
 				156E643120DFF3050026988F /* DSAverageTableViewCell.swift in Sources */,
 				156E642F20DFF3010026988F /* DSPresentationModel.swift in Sources */,
 				156E643020DFF3030026988F /* DSGraphTableViewCell.swift in Sources */,
-				156E645320E00F700026988F /* ISPresentationModel.swift in Sources */,
 				156E644E20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
 				156E642D20DFF2FC0026988F /* SSViewController.swift in Sources */,
 				156E645A20E012850026988F /* ISView.swift in Sources */,
-				156E644820E00B6B0026988F /* ISViewController.swift in Sources */,
 				156E643620DFF9250026988F /* SSPresentationModel.swift in Sources */,
 				156E642E20DFF2FE0026988F /* DSViewController.swift in Sources */,
 				156E643220DFF3D10026988F /* UIPresentationModel.swift in Sources */,
@@ -669,8 +661,6 @@
 			files = (
 				156E645B20E012850026988F /* ISView.swift in Sources */,
 				156E644F20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
-				156E645420E00F710026988F /* ISPresentationModel.swift in Sources */,
-				156E644920E00B6B0026988F /* ISViewController.swift in Sources */,
 				156E642420DFF2D90026988F /* HackProjUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,8 +712,6 @@
 			files = (
 				156E645920E012850026988F /* ISView.swift in Sources */,
 				156E644D20E00BDB0026988F /* UIViewController+Extension.swift in Sources */,
-				156E645520E00F7F0026988F /* ISPresentationModel.swift in Sources */,
-				156E644720E00B6B0026988F /* ISViewController.swift in Sources */,
 				15F8A0B520DFD7E0007A8FAB /* HackProjUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

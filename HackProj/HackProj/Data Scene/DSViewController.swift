@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DSViewController: UITableViewController {
+class DSViewController: UITableViewController {
     
     // MARK: Class Properties
 
@@ -21,7 +21,7 @@ public class DSViewController: UITableViewController {
 
     // MARK: Class Initialization & Lifecycle
 
-    convenience public init(presentationModel: DSPresentationModel) {
+    convenience init(presentationModel: DSPresentationModel) {
         self.init(style: DSViewController.style)
         self.presentationModel = presentationModel
     }
@@ -34,11 +34,11 @@ public class DSViewController: UITableViewController {
         super.init(nibName: DSViewController.identifier, bundle: DSViewController.bundle)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         if let presentationModel = self.presentationModel {

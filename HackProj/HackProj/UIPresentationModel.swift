@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class UIPresentationModel: NSObject {
+class UIPresentationModel: NSObject {
     
-    public override init() {
+    override init() {
         super.init()
     }
 
