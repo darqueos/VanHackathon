@@ -1,0 +1,17 @@
+# Podfile
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'HackProj' do
+    pod 'Alamofire', '~> 4.7'
+    pod 'RealmSwift'
+    pod 'RxCocoa',    '~> 4.0'
+    pod 'RxSwift',    '~> 4.0'
+end
+
+# RxTest and RxBlocking make the most sense in the context of unit/integration tests
+target 'HackProjTests' do
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
+end
